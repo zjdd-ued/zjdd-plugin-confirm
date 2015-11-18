@@ -1,0 +1,22 @@
+{
+  "name": "zjdd-plugin-confirm",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.jade",
+  "keywords": [
+    ""
+  ],
+  "bowerDir": "bower_component",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "kulor-plugin-panel": "~0.0.7"
+  },
+  "authors": [
+    "bo.cheng <chen8114@sina.com>"
+  ],
+  "kulor": {
+    "requireName": "confirm",
+    "jsFileName": "confirm"
+  }
+}

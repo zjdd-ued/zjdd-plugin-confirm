@@ -1,0 +1,14 @@
+include kulor-plugin-panel/index
+
+link( type="text/css" , rel="stylesheet" , href="css/plugin/confirm.css" )
+script( type="text/javascript" , src="js/plugin/confirm.js" )
+
+script(type="text/kulor-template" , id="zjddConfirmTmpContainerTemplate")
+
+script(type="text/kulor-template" , id="zjddConfirmContainerTemplate")
+    .zjdd-plugin-Confirm-container
+        .cover-by
+        article {{content}}
+        footer(class="{{footerClass}}")
+            a.sure {{sureTitle}}
+            a.cancel {{cancelTitle}}
