@@ -22,6 +22,7 @@ define( "Confirm" , [ "Base" , "Panel" , "DataView" , "EventBind" ] , function( 
                     this.dataView   = tool.getConfirmDataView.call( this , opt );
                 } else {
                     this.dataView.set( opt );
+                    this.panel.show();
                 }
                 return this;
             } ,
@@ -55,6 +56,8 @@ define( "Confirm" , [ "Base" , "Panel" , "DataView" , "EventBind" ] , function( 
         makeupOpt   : function( opt ){
             if( opt.sure ){
                 opt[ "footerClass" ]    = "btn-is-2";
+            } else {
+                opt[ "footerClass" ]    = "";
             }
         }
     }
